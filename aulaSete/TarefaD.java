@@ -6,9 +6,7 @@ public class TarefaD {
 		int a = 0;
 		while (a<20) {
 			System.out.println(a+1);
-			a++;
-			a++;
+			a+=2;
 		}
 	}
-
 }
