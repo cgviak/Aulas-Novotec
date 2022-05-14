@@ -9,5 +9,4 @@ public class TarefaD {
 			a+=2;
 		}
 	}
-
 }
