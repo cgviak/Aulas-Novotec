@@ -12,6 +12,7 @@ public class Vetor6 {
 				System.out.println(a[b]);
 		}
 		}
+		
 	}
-
+	
 }
