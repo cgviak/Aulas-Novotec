@@ -12,21 +12,21 @@ public class Switch2 {
 		System.out.print("Determine o dia: ");
 		dia = sc.nextByte ();
 		
-		System.out.print("Determine o mÃªs: ");
+		System.out.print("Determine o mês: ");
 		mes = sc.nextByte ();
-		System.out.print("Seu signo Ã©: ");
+		System.out.print("Seu signo é: ");
 		
 		switch (mes) {
 		case 1:
 			if (dia<=19) {
-				System.out.print("CapricÃ³rnio.");
+				System.out.print("Capricórnio.");
 			} else {
-				System.out.print("AquÃ¡rio.");
+				System.out.print("Aquário.");
 			}
 			break;
 		case 2:
 			if (dia<=18) {
-				System.out.print("AquÃ¡rio.");
+				System.out.print("Aquário.");
 			} else {
 				System.out.print("Peixes.");
 			}
@@ -35,12 +35,12 @@ public class Switch2 {
 			if (dia<=20) {
 				System.out.print("Peixes.");
 			} else {
-				System.out.print("Ãries.");
+				System.out.print("Áries.");
 			}
 			break;
 		case 4:
 			if (dia<=20) {
-				System.out.print("Ãries.");
+				System.out.print("Áries.");
 			} else {
 				System.out.print("Touro.");
 			}
@@ -49,26 +49,26 @@ public class Switch2 {
 			if (dia<=20) {
 				System.out.print("Touro.");
 			} else {
-				System.out.print("GÃªmeos.");
+				System.out.print("Gêmeos.");
 			}
 			break;
 		case 6:
 			if (dia<=20) {
-				System.out.print("GÃªmeos.");
+				System.out.print("Gêmeos.");
 			} else {
-				System.out.print("CÃ¢ncer.");
+				System.out.print("Câncer.");
 			}
 			break;
 		case 7:
 			if (dia<=22) {
-				System.out.print("CÃ¢ncer.");
+				System.out.print("Câncer.");
 			} else {
-				System.out.print("LeÄƒo.");
+				System.out.print("Leão.");
 			}
 			break;
 		case 8:
 			if (dia<=22) {
-				System.out.print("LeÄƒo.");
+				System.out.print("Leão.");
 			} else {
 				System.out.print("Virgem.");
 			}
@@ -84,25 +84,25 @@ public class Switch2 {
 			if (dia<=22) {
 				System.out.print("Libra.");
 			} else {
-				System.out.print("EscorpiÃ£o.");
+				System.out.print("Escorpião.");
 			}
 			break;
 		case 11:
 			if (dia<=21) {
-				System.out.print("EscorpiÃ£o.");
+				System.out.print("Escorpião.");
 			} else {
-				System.out.print ("SagitÃ¡rio.");
+				System.out.print ("Sagitário.");
 			}
 			break;
 		case 12:
 			if (dia<=22) {
-				System.out.print("SagitÃ¡rio.");
+				System.out.print("Sagitário.");
 			} else {
-				System.out.print("CapricÃ³rnio.");
+				System.out.print("Capricórnio.");
 			}
 			break;
 		default:
-			System.out.print("valor invÃ¡lido.");
+			System.out.print("valor inválido.");
 		}
 		}
 }
