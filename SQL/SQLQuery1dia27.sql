@@ -3,7 +3,7 @@ USE Bank
 SELECT AVG(RENDA) AS MediaRenda
 FROM Clientes
 
-SELECT Nome AS NomeCliente, Endereco AS 'Endereço do Cliente'
+SELECT Nome AS NomeCliente, Endereco AS 'EndereÃ§o do Cliente'
 FROM Clientes
 
 SELECT SUM(Valor) AS ValordaTransferencia,
@@ -33,9 +33,9 @@ SELECT Aprovado, COUNT (*)
 FROM logTransferencias
 GROUP BY Aprovado
 
-SELECT Cidade, AVG (Renda) AS 'Renda Média', 
-	MAX (Renda) AS 'Renda Máxima' , 
-	MIN (Renda) AS 'Renda Mínima'
+SELECT Cidade, AVG (Renda) AS 'Renda MÃ©dia', 
+	MAX (Renda) AS 'Renda MÃ¡xima' , 
+	MIN (Renda) AS 'Renda MÃ­nima'
 FROM Clientes
 GROUP BY Cidade
 HAVING MIN(Renda) > 5
@@ -46,7 +46,7 @@ GROUP BY Cidade
 
 SELECT AVG (Renda)
 FROM Clientes
-WHERE Cidade = 'São Paulo'
+WHERE Cidade = 'SÃ£o Paulo'
 
 SELECT AVG(Renda)
 FROM Clientes
