@@ -13,8 +13,8 @@ SELECT cl.Nome,
 	cl.Telefone,
 	co.dataAbertura,
 	co.Limite,
-	IIF (co.internetBanking=1, 'Acessou', 'Não Acessou') AS 'Internet Banking',
-	IIF (co.talaoCheque=1, 'Dispõe', 'Não Utiliza') AS 'Talão de Cheque'
+	IIF (co.internetBanking=1, 'Acessou', 'NÃ£o Acessou') AS 'Internet Banking',
+	IIF (co.talaoCheque=1, 'DispÃµe', 'NÃ£o Utiliza') AS 'TalÃ£o de Cheque'
 		FROM Clientes AS cl INNER JOIN Contas AS co
 			ON cl.idCliente = co.idCliente
 		WHERE cl.DDD = 19
@@ -79,7 +79,7 @@ GO
 SELECT *
 FROM vw_media_limite_agencia 
 
--- exercícios
+-- exercÃ­cios
 
 SELECT a.idAgencia, a.Numero, a.Endereco, a.Cidade, f.Nome
 FROM Agencias AS a, Funcionarios AS f
@@ -91,13 +91,13 @@ FROM Funcionarios AS f, Cargos AS c
 SELECT cc.Numero, cc.dataVencimento, tc.Descricao
 FROM Cliente_Cartao AS cc, tipoCartao AS tc
 
-SELECT c.idConta, c.dataAbertura, cl.Nome, f.Telefone AS 'telefone funcionário'
+SELECT c.idConta, c.dataAbertura, cl.Nome, f.Telefone AS 'telefone funcionÃ¡rio'
 FROM Contas AS c, Clientes AS cl, Funcionarios AS f
 
 SELECT a.Numero, c.Cidade, c.Estado, c.idCliente, co.dataAbertura
 FROM Agencias AS a, Clientes AS c, Contas AS co
 
-SELECT a.Numero AS 'número agência', c.Cidade, co.dataAbertura, co.Limite, c.Nome, c.Renda
+SELECT a.Numero AS 'nÃºmero agÃªncia', c.Cidade, co.dataAbertura, co.Limite, c.Nome, c.Renda
 FROM Agencias AS a, Clientes AS c, Contas AS co 
 
 SELECT c.Nome, cc.Numero, cc.dataVencimento, tc.Descricao, tc.Internacional
