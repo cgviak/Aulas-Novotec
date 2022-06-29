@@ -3,7 +3,7 @@ FROM tipoCartao
 
 SELECT *
 FROM Clientes
-WHERE Cidade = 'São Paulo'
+WHERE Cidade = 'SÃ£o Paulo'
 
 SELECT *
 FROM Clientes
@@ -41,7 +41,7 @@ SELECT TOP 10 *
 FROM logTransferencias
 ORDER BY Valor DESC
 
--- exercícios
+-- exercÃ­cios
 
 SELECT *
 FROM tipoCartao
@@ -69,7 +69,7 @@ WHERE Renda >= 2000
 
 SELECT *
 FROM Clientes
-WHERE Cidade = 'São Paulo' AND rendaComprovada = 1
+WHERE Cidade = 'SÃ£o Paulo' AND rendaComprovada = 1
 
 SELECT *
 FROM Contas
